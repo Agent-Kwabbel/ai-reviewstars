@@ -58,8 +58,11 @@ Shows strong bias toward positive (7–9) ratings — typical for imbalanced rev
 
 ![Confusion Matrix](confusion-matrix.png)
 
+**Basically:**
 
-**I want to improve this baseline as the next step in this project, but because of (relatively slow) hardware and still learning AI I haven't done it yet.**
+I want to improve this baseline as the next step in this project, but because of (relatively slow) hardware and still learning AI I haven't done it yet.
+
+The run done for the stats here above wasn't fully completed because of a crash without saved data. So some extra stats will be added later.
 
 ---
 
