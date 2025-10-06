@@ -56,7 +56,7 @@ System: Arch Linux (Python 3.13, scikit-learn 1.5+)
 **Confusion matrix:**  
 Shows strong bias toward positive (7–9) ratings — typical for imbalanced review data.
 
-![Confusion Matrix](reports/baseline/confusion_matrix.png)
+![Confusion Matrix](reports/baseline/confusion-matrix.png)
 
 
 **I want to improve this baseline as the next step in this project, but because of (relatively slow) hardware and still learning AI I haven't done it yet.**
