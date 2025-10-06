@@ -1,4 +1,4 @@
-# ⭐ Review Rating Predictor (Text → Stars)
+# ⭐ Review Rating Predictor
 
 This project builds a machine learning system that predicts restaurant review ratings (0.5–5.0 stars) **directly from text**.  
 It uses traditional NLP (TF-IDF + linear models) to establish a **strong, interpretable baseline** before moving toward transformer-based approaches.
@@ -60,7 +60,7 @@ Shows strong bias toward positive (7–9) ratings — typical for imbalanced rev
 
 **Basically:**
 
-I want to improve this baseline as the next step in this project, but because of (relatively slow) hardware and still learning AI I haven't done it yet.
+I want to improve this baseline as the next step in this project, but because of my (relatively slow) hardware and teh fact that I'm still learning AI/ML/DL/the whole thing I haven't done it yet.
 
 The run done for the stats here above wasn't fully completed because of a crash without saved data. So some extra stats will be added later.
 
