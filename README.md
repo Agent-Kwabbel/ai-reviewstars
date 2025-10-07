@@ -33,32 +33,24 @@ Sorry I forgot where the dataset came from, but it containing columns such as:
 | Regression | Ridge Regression (α=2.0) | Predict continuous rating (0–5) |
 | Classification | Logistic Regression (SAGA, class_weight=balanced) | Predict discrete half-star bins |
 
-**Hardware used:**  
-Ryzen 5 5600X · RTX 3070 · 16 GB RAM · NVMe storage  
-System: Arch Linux (Python 3.13, scikit-learn 1.5+)
-
 ---
 
 ## Baseline Results
 
-| Metric | Ridge (Reg) | Logistic (Cls) |
-|:--------|:-------------:|:---------------:|
-| MAE | **0.384** | – |
-| RMSE | **0.489** | – |
-| Within ± 0.5 star | **0.894** | **0.792** |
-| Accuracy | – | **0.425** |
-| F1 macro | – | **0.250** |
-
-**Training time:**  
-- Ridge → ~2.7 min  
-- Logistic (SAGA) → ~2 h 45 min (9842 s, converged at epoch 964)
+| Metric | Ridge (Reg) | Logistic (Cls) `max_iter=1000` | Logistic (Cls) `max_iter=5000` |
+|:--------|:-------------:|:---------------:|:---------------:|
+| MAE | **0.384** | – |  – |
+| RMSE | **0.489** | – |   – |
+| Within ± 0.5 star | **0.894** | **0.792** |  **0.776** |
+| Accuracy | – | **0.425** |  **0.437** |
+| F1 macro | – | **0.250** |  **0.266** |
 
 **Confusion matrix:**  
-Shows strong bias toward positive (7–9) ratings — typical for imbalanced review data.
+Shows strong bias toward positive (7–9) ratings — typical for imbalanced review data. Confusion matrix based on `max_iter=1000`.
 
 ![Confusion Matrix](confusion-matrix.png)
 
-**Basically:**
+**So:**
 
 I want to improve this baseline as the next step in this project, but because of my (relatively slow) hardware and teh fact that I'm still learning AI/ML/DL/the whole thing I haven't done it yet.
 
